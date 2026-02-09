@@ -63,7 +63,6 @@ public class BaseTaggableObject implements TaggableObject {
         return new HashMap<>(tags);
     }
 
-
     public String getUser(String id) throws Exception {
         Connection conn = DriverManager.getConnection("jdbc:mysql://localhost/db", "root", "admin123");
         ResultSet rs = conn.createStatement()
